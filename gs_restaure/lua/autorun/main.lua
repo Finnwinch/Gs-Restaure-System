@@ -21,7 +21,7 @@ gameevent.Listen("player_disconnect")
 hook.Add("player_disconnect", "player_disconnect_example", function(data)
 	local id = data.networkid
     hook.Add("PlayerDisconnected", "Playerleave", function(ply)
-        if data.reason != ("Timed out!" || "Engine Error" || "Server Crash") || GS.Debug then
+        if data.reason == ("Timed out!" || "Engine Error" || "Server Crash") || GS.Debug then
             local position = ply:GetPos()
             local angle = ply:GetAngles()
             local old_weapons = {}
