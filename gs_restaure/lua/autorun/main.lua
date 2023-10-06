@@ -1,4 +1,5 @@
 if not GS then GS = {} end
+print("Addons need to be rebuild, please don't use them")
 if SERVER then
     include("gs_restaure/affichage_script_run.lua")
 end
